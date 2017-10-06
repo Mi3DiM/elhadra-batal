@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>الهدرة باطل</title>
+</head>
+<body>
+
+	<div dir="rtl">
+		<h3>الهدرة باطل</h3>
+		<textarea id="text" style="min-width: 100%; max-width: 100%; min-height: 180px;">الكُسْكُسْ أو الكُسْكْسِي أو سِيكْسُو (بالأمازيغية يُنطق سِيكِسُو أو سْكْسُو أو كْسْكْسُو في المغرب و الجزائر وشرق ليبيا أو كُسْكْسِي في تونس و غرب ليبيا ومصر و موريتانيا) وهي كلمة أمازيغية ذكرها بن دريد في جمهرة اللغة في القرن العاشر للميلاد. يصنع من طحين القمح أو الذرة في شكل حبيبات صغيرة، ويتناول بالملاعق أو باليد. يطبخ بالبخار ويضاف إليه اللحم، أو الخضار، أو الفول الأخضر المقور، أو الحليب، أو الزبدة والسكر الناعم حسب الأذواق والمناسبات. وأما كلمة كسكسو فهي مشتقة من سيكسو وهي كلمة أمازيغية ومعناها الطريقة التي تحضر بها حبوب القمح الصغيرة الخاصة بطبق الكسكسو وكذالك في المغرب يحضر الكسكس مع أنواع اللحوم الحلال و اللفت و البدنجان و القرع الأحمر ويقدم هكذا بالمرق أما باللبن فيقدم بدون مرق أو خضر فقط الكسكس باللبن.</textarea>
+		<br>
+		<input onclick='responsiveVoice.speak(document.getElementById("text").value, "Arabic Female");' type='button' value='► أبدا تهدر' />
+		<input onclick='responsiveVoice.cancel();' type='button' value='■ خلاص حبّس' />
+		<input onclick='audio();' type='button' value='▼ تيليشارجي الهدرة' />
+	</div>
+
+	<br>
+	<iframe id="audio" style="border-width: 0; display: block; width: 100%; height: 100px" src="http://responsivevoice.org/responsivevoice/getvoice.php?t= الهَدْرَة بَاطْلْ&tl=ar-AR"></iframe>
+
+	<br>
+	<div><a href="https://responsivevoice.org">ResponsiveVoice-NonCommercial</a> licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/95x15.png" alt="95x15" width="95" height="15" /></a></div>
+
+	<p>HTML By <a href="https://fb.com/mi3dim">Hamid Matoub</a></p>
+
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<script>
+		function audio() {
+			document.getElementById("audio").src = 'http://responsivevoice.org/responsivevoice/getvoice.php?t=' + document.getElementById("text").value + '&tl=ar-AR';
+		}
+	</script>
+
+</body>
+</html>
